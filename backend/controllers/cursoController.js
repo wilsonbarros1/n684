@@ -1,4 +1,4 @@
-const { Curso: CursoModel } = require("../models/Curso");
+const { Curso: CursoModel } = require("../models/curso");
 
 const cursoController = {
 

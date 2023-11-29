@@ -4,7 +4,10 @@ const { Schema } = mongoose;
 
 const usuarioSchema = new Schema({
     nome: String,
-    idade: Number
+    idade: Number, 
+    curso: String, 
+    email: String, 
+    password: String
 
 },
     { timestamps: true }
