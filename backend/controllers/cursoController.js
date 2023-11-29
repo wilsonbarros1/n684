@@ -78,7 +78,7 @@ const cursoController = {
 
             res.status(200).json({ curso, msg: "Curso Atualizado!" });
         }
-    },
+    }
 };
 
 module.exports = cursoController;

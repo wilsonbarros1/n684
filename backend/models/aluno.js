@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const usuarioSchema = new Schema({
+const alunoSchema = new Schema({
     nome: String,
-    idade: Number, 
+    idade: String, 
     curso: String, 
     email: String, 
     password: String
@@ -13,6 +13,9 @@ const usuarioSchema = new Schema({
     { timestamps: true }
 );
 
-const Usuario = mongoose.model("Usuario", usuarioSchema);
+const Aluno = mongoose.model("Aluno", alunoSchema);
 
-module.exports = Usuario;
+module.exports = {
+    Aluno,
+    alunoSchema,
+};

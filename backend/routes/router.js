@@ -5,11 +5,10 @@ const cursoRouter = require("./curso");
 
 router.use("/", cursoRouter);
 
-// Rotas de usuario
-const usuarioRouter = require("./usuario");
+// Rotas de aluno
+const alunoRouter = require("./aluno");
 
-router.use("/", usuarioRouter);
-
+router.use("/", alunoRouter);
 
 module.exports = router;
 
