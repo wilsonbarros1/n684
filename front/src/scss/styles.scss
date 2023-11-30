@@ -251,6 +251,9 @@ a:hover {
     background-color: transparent;
     color: #DBE2EF;
 }
+.form-control::placeholder{
+    color: #c9cbcf;
+}
 .form-control:focus{
     background-color: transparent;
     color: #ffffff;
@@ -348,11 +351,22 @@ th{
 
 .modal-content {
     height: 100%;
-    background-color: rgb(78 115 157 / 84%) !important;
+    background-color: rgba(49, 79, 114, 0.84) !important;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .btn-modal {
     width: fit-content;
+    justify-self: flex-end;
+    border-radius: 5px;
+    background-color: rgba(177, 44, 51, 0.733) !important;
+    justify-self: end;
 }
 
+.btn-modal:hover {
+    
+    background-color: rgba(240, 52, 61, 0.733) !important;
+}
 /*  */
