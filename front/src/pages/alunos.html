@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>N695-Welfare</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./scss/styles.scss">
+</head>
+
+<body class="body-layout" data-bs-spy="scroll" data-bs-target=".navbar" id="main-page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg nav-bg-color sticky-top bs-primary-text-emphasis" >
+        <div class="container bg-body-color">
+            <a class="navbar-brand border rounded" href="/">
+              <p class="m-0 p-0">N695</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item sign-up">
+                        <a class="nav-link" href="/">Log out</a>
+                    </li>       
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-container main-admin">
+      <div class="container table-container">
+          <h2 class="text-center mb-4">Gestão Administrativa</h2>
+          <div>
+            <h3>Alunos</h3>
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Curso</th>
+                  <th>Instituição</th>
+                  <th>Ações</th>
+              </tr>
+              </thead>
+              <tbody>
+              <!-- Placeholder data -->
+              <tr>
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>johndoe@example.com</td>
+                  <td>
+                      <button class="btn btn-info btn-sm">Edit</button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Jane Smith</td>
+                  <td>janesmith@example.com</td>
+                  <td>
+                      <button class="btn btn-info btn-sm">Edit</button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                  </td>
+              </tr>
+              <!-- Add more rows as needed -->
+              </tbody>
+          </table>
+          </div>
+      </div>
+    
+    <div>
+
+
+
+
+        <script type="module">
+            import axios from "/@fs/C:/Users/Usuário/Desktop/ADS_3/webdev/front/node_modules/.vite/deps/axios.js?v=cdba558c";
+      
+            const baseUrl = `http://3.23.103.69:3030/api/curso`;
+            
+    
+            const getCourses = async () => {
+      try {
+        const response = await axios.get(baseUrl);
+        return response.data;
+      } catch (error) {
+        console.error('Error fetching courses:', error);
+        throw error;
+      }
+    };
+    
+    // Use an async function to handle the Promise returned by getCourses
+    const fetchAndLogCourses = async () => {
+      try {
+        const arr = await getCourses();
+        return arr;
+      } catch (error) {
+        // Handle errors if necessary
+        console.error('Error:', error);
+      }
+    };
+    
+    // Call the async function
+    fetchAndLogCourses();
+    
+            /* let courses = getCourses(); */
+    
+            
+          </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./router/router.js"></script>
+</body>
+
+</html>

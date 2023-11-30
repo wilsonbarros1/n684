@@ -1,0 +1,230 @@
+@import "bootstrap/scss/bootstrap";
+
+#main-page {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('../assets/2028940.339a7d9529841523a9c9.jpg');
+    background-attachment: fixed;
+    width: 99vw;
+    overflow-x: hidden;
+}
+
+.navbar {
+    top: 0px;
+    left: 0px;
+    max-height: 10vh;
+}
+
+/* .container {
+    max-height: 5rem;
+} */
+
+.body-layout{
+    background-color: #F9F7F7; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 99vw;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+@include media-breakpoint-down(sm) {
+    .main-container{
+        background-color: red;
+    }
+  }
+
+.section {
+    width: 98%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: #73849749;
+    border-radius: 30px;
+}
+
+.image-wrapper {
+    height: calc(20rem + 1vh);
+    height: 25rem;
+}
+
+.message-wrapper{
+    height: 25rem;
+    width: 40rem;
+    border: 2px dashed #113946;
+    border-radius: 30px;
+}
+
+
+
+.layout-color {
+    color: red;
+}
+
+.font-color {
+    color: #DBE2EF;
+}
+
+.navbar{
+    font-style:  #DBE2EF; /* Replace with your desired color */
+}
+
+.nav-bg-color {
+    background-color: #73849749;
+}
+
+.navbar-nav{
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar-brand {
+    font: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #DBE2EF;
+}
+
+.navbar-brand:hover {
+    background-color: #DBE2EF;
+    color: #475d86;
+}
+
+.nav-link{
+    color: #DBE2EF;
+    border: solid transparent 2px;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover{
+    border: solid #DBE2EF 2px;
+    border-radius: 3px;
+    background-color: #DBE2EF;
+}
+
+.nav-item.sign-up{
+    border: solid #DBE2EF 1px;
+    border-radius: 3px;
+}
+
+.navbar-toggler {
+    background-color: #DBE2EF;
+    border: none;
+  }
+
+  /* Customize the Navbar Toggler icon color */
+  .navbar-toggler-icon {
+    background-color: #DBE2EF;
+  }
+
+  /* Customize the Navbar Toggler icon itself (assuming it's an SVG or an image) */
+  .navbar-toggler-icon path {
+    fill: #DBE2EF;
+  }
+
+
+// <!-- SECOND SECTION -->
+
+/////////////////////////////////////////
+////////// |- LOGIN PAGE -| /////////////
+/// /////////////////////////////////////
+
+.card {
+    background-color: #73849749;
+    height: 100%;
+}
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.login-container{
+    height: 50vh;
+}
+.justify-content-center{
+    height: 100%;
+}
+.card-header{
+    color: rgba(216, 216, 216, 0.788)
+}
+.form-group{
+    color: rgba(216, 216, 216, 0.788)
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.form-control{
+    background-color: transparent;
+    color: #DBE2EF;
+}
+.form-control:focus{
+    background-color: transparent;
+    color: #ffffff;
+}
+.form-control:active{
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/////////////////////////////////////////
+////////// |- ADMIN PAGE -| /////////////
+/// /////////////////////////////////////
+
+.main-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    margin-top: 1rem;
+    color: #DBE2EF;
+}
+
+.table > :not(caption) > * > * {
+    padding: 0.5rem 0.5rem;
+    color: #DBE2EF;
+    background-color: #73849749;
+    border-radius: 4px;    
+    border-bottom-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
+}
+/* .table {
+    background-color: #73849749;
+    border-radius: 30px;
+} */
+
+thead{
+    background-color: #73849749;
+}
+th{
+    background-color: #73849749;
+}
