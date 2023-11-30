@@ -38,26 +38,38 @@
     </nav>
 
 
-    <div class="main-container main-login">
+    <div class="main-container main-signin">
         <div class="container login-container">
           <div class="row justify-content-center">
               <div class="col-md-6 col-sm-8 col-lg-4">
-                  <div class="card">
+                  <div class="card card-signin">
                       <div class="card-header">
                           <h3 class="text-center">Cadastro</h3>
                       </div>
                       <div class="card-body">
-                          <form id="loginForm">
-                              <div class="form-group">
-                                  <label for="username">Username:</label>
-                                  <input type="text" class="form-control" id="username" name="username" required>
-                              </div>
-                              <div class="form-group">
-                                  <label for="password">Password:</label>
-                                  <input type="password" class="form-control" id="password" name="password" required>
-                              </div>
-                              <button type="button" class="btn btn-primary btn-block" onclick="submitForm()">Login</button>
-                          </form>
+                        <form id="signInForm" >
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="idade">Idade:</label>
+                                <input type="text" class="form-control" id="idade" name="idade" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="curso">Curso:</label>
+                                <input type="text" class="form-control" id="curso" name="curso" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="text" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block" value="Cadastrar"/>
+                        </form>
                       </div>
                   </div>
               </div>

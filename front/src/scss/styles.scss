@@ -52,7 +52,7 @@ a:hover {
 
 @include media-breakpoint-down(sm) {
     .main-container{
-        background-color: red;
+        /* background-color: red; */
     }
   }
 
@@ -69,6 +69,28 @@ a:hover {
     border-radius: 30px;
 }
 
+@media screen and (max-width: 1100px) {
+    .section {
+        height:none;
+        padding-bottom: 4rem;
+    }
+  }
+
+.title-section {
+    color: #e8ecf3;
+    text-align: center;
+}
+
+.subtitle-section {
+    color: #cad2e2;
+    font-size:large;
+}
+
+.description-section {
+    color: #aeafb1;
+    text-indent: 3ch;
+}
+
 .image-wrapper {
     height: calc(20rem + 1vh);
     height: 25rem;
@@ -79,6 +101,11 @@ a:hover {
     width: 40rem;
     border: 2px dashed #113946;
     border-radius: 30px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 
@@ -168,9 +195,18 @@ a:hover {
     align-items: center;
     height: 90vh;
 }
+.main-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .login-container{
     height: 50vh;
 }
+ .card-signin{
+    align-self: center;
+    margin-top: 0.75rem;
+} 
 .justify-content-center{
     height: 100%;
 }
@@ -188,6 +224,14 @@ a:hover {
     gap: 1rem;
 }
 #loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#signInForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,16 +272,22 @@ a:hover {
     border-bottom-width: var(--bs-border-width);
     box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
 }
-/* .table {
-    background-color: #73849749;
-    border-radius: 30px;
-} */
+.table {
+    @media (max-width: 1112px) {
+        overflow-x: auto;
+    }
+} 
 
 thead{
     background-color: #73849749;
 }
 th{
     background-color: #73849749;
+}
+
+.table-striped>tbody>tr>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: #e9e9eb;
 }
 
 .gestao-title-container{
@@ -263,3 +313,37 @@ th{
     border-radius: 10px;
     padding: 0.5rem;
 }
+
+.btn {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+/* MODAL */
+
+#editModal {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    height: 100%;
+    background-color: rgb(78 115 157 / 84%) !important;
+}
+
+.btn-modal {
+    width: fit-content;
+}
+
+/*  */
